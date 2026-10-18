@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Meridian | Reservations</title>
+        <meta name="description" content="Reserve your table at Meridian." />
+        <meta name="theme-color" content="#121013" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;600;700;800&family=Varela+Round&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <script>
+            document.documentElement.className = "js";
+        </script>
+    </head>
+    <body data-page="reservations.html">
+        <main>
+            <section class="band">
+                <div class="bg" data-px style="background-image: url(images/paralax-img_02.jpg)"></div>
+                <div class="reveal">
+                    <span class="script">The Perfect</span>
+                    <h2>Blend</h2>
+                </div>
+            </section>
+            <section>
+                <div class="wrap">
+                    <div class="title reveal">
+                        <span class="script">Make A</span>
+                        <h2>Reservation</h2>
+                        <p>
+                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                            veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                            quia voluptas sit.
+                        </p>
+                    </div>
+                    <form
+                        class="res reveal"
+                        data-form="Thank you! Your table request has been received – we will confirm shortly."
+                        novalidate
+                    >
+                        <label class="f"
+                            ><i class="fa fa-user-o"></i><input name="name" placeholder="Your Name" required
+                        /></label>
+                        <label class="f"
+                            ><i class="fa fa-envelope-o"></i
+                            ><input type="email" name="email" placeholder="Your Email" required
+                        /></label>
+                        <label class="f"
+                            ><i class="fa fa-phone"></i
+                            ><input type="tel" name="phone" placeholder="Phone Number" required
+                        /></label>
+                        <label class="f"
+                            ><i class="fa fa-calendar"></i><input type="date" name="date" required
+                        /></label>
+                        <label class="f"
+                            ><i class="fa fa-clock-o"></i
+                            ><select name="time" data-fill="time" required></select
+                        ></label>
+                        <label class="f"
+                            ><i class="fa fa-user"></i
+                            ><select name="people" data-fill="people"></select
+                        ></label>
+                        <div class="full"><button class="btn" type="submit">Find A Table</button></div>
+                        <div class="note full" role="status"></div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <script src="js/script.js" defer></script>
+    </body>
+</html>
